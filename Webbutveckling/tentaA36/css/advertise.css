@@ -1,0 +1,13 @@
+form label {
+  display: block;
+}
+#form-information input {
+  margin-bottom: 10px;
+  display: block;
+}
+#form-information input:last-child {
+  display: inline;
+}
+#add-image {
+  display: inline;
+}

@@ -1,0 +1,86 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  height: 100%;
+  font-family: sans-serif;
+}
+#container {
+  min-width: 1010px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+main {
+  background-color: silver;
+  overflow: auto;
+  margin-bottom: 57px;
+}
+.article-container {
+  width: calc(75% - 20px);
+  float: left;
+}
+.article {
+  background-color: orange;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  overflow: hidden;
+}
+.inner-article {
+  margin: 1em;
+}
+.inner-article p {
+  margin: 0;
+}
+
+.inner-article img {
+  max-width: 250px;
+  height: auto;
+  float: right;
+  margin: 1em;
+}
+.article-text {
+  padding-top: 8px;
+  display: none;
+}
+aside {
+  height: 100%;
+  width: 25%;
+  padding: 10px;
+  float: right;
+  text-align: justify;
+}
+aside button {
+  display: block;
+  margin: auto;
+}
+aside h2 {
+  text-align: center;
+  font-size: 1em;
+}
+#aside-text {
+  margin: 5%;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  #container {
+    min-width: 610px;
+    width: 100%;
+    background-color: silver;
+  }
+  header {
+    background-image: none;
+  }
+  aside {
+    display: none;
+  }
+  .article-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+#Placera htaccess-filen i den mapp du vill skydda
+#via FileZilla byt namn till .htaccess
+
+
+#Se till att path nedan stämmer med din ftp
+# - i detta fallet ligger .htpasswd i er webbrot (public_html)
+
+AuthName "tentaA36"
+AuthUserFile "/storage/content/97/4003497/grupp13.icsweb.se/public_html/.htpasswd"
+AuthGroupFile /dev/null
+AuthType Basic
+Require valid-user

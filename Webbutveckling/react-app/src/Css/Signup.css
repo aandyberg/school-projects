@@ -1,0 +1,10 @@
+.h1-signup {
+  color: white;
+  margin: 5px;
+}
+.form-container-signup {
+  min-height: 335px;
+}
+.input-error {
+  color: red;
+}

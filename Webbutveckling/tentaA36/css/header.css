@@ -1,0 +1,95 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  height: 100%;
+  font-family: sans-serif;
+}
+nav {
+  height: 100%;
+  float: right;
+}
+nav a {
+  float: left;
+  padding: 2em;
+  color: white;
+}
+nav a:hover {
+  background-color: orange;
+}
+header {
+  display: inline-block;
+  width: 100%;
+  height: 337px;
+  background-image: url("../images/background.png");
+  background-size: cover;
+}
+#header-text {
+  height: 45%;
+  opacity: 0.7;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#upper-header {
+  height: 33%;
+}
+
+h1 {
+  margin: 2%;
+  float: left;
+}
+#category-menu {
+  float: right;
+  position: relative;
+}
+#dropdown-category {
+  display: none;
+  position: absolute;
+  z-index: 200;
+  margin-top: calc(4em + 18px);
+}
+#dropdown-category a {
+  width: calc(100% - 64px);
+}
+/*#category-menu {
+  height: 100%;
+  width: 25%;
+  float: right;
+  text-align: center;
+  padding: 2em;
+}*/
+#dropdown-category:hover > #category-menu {
+  background-color: orange;
+}
+#category-menu:hover #dropdown-category {
+  display: block;
+  background-color: silver;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: silver;
+  width: 80%;
+}
+#report-email {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  header {
+    background-image: none;
+  }
+  footer {
+    width: 100%;
+  }
+  nav a {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  #dropdown-category a {
+    width: 100%;
+  }
+}

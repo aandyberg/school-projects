@@ -1,0 +1,41 @@
+.text-container-signup-success {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 1em;
+  width: 85%;
+  min-width: 900px;
+  max-width: 1500px;
+  border-radius: 25px;
+  height: 50vh;
+  overflow: auto;
+  z-index: 1;
+  animation: fade 2s;
+  justify-content: center;
+  align-items: center;
+}
+.text-container-signup-success p {
+  margin: 5%;
+  color: white;
+  text-align: center;
+}
+.h1-signup-success {
+  margin: 5%;
+  text-align: center;
+  color: white;
+}
+.btn-signup-success {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1023px) {
+  .text-container-about {
+    min-width: 680px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-container-about {
+    min-width: 350px;
+  }
+}

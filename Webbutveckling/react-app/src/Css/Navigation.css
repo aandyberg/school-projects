@@ -1,0 +1,151 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75em;
+  align-items: center;
+  font-weight: 550;
+  background-color: rgb(128, 128, 128, 0.1);
+  position: relative;
+  border-bottom: 1px solid;
+}
+
+.logo-nav {
+  object-fit: contain;
+  height: 65px;
+}
+
+.right {
+  justify-content: right;
+}
+
+.navbar-menu {
+  display: none;
+}
+.burger-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  padding-top: 0.5rem;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  display: block;
+  padding: 1em 2em;
+  border: 2px solid transparent;
+}
+
+.navbar-item {
+  text-decoration: none;
+  color: black;
+}
+/*header {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #edf2f7;
+    padding: 5px;
+  }*/
+
+.navbar-right {
+  display: none;
+}
+
+/*header img {
+    margin-left: 5%;
+    object-fit: contain;
+    height: 50px;
+  }*/
+
+/*.mobileMenu {
+    width: 80%;
+    height: 100%;
+    color: purple;
+    position: fixed;
+    background-color: darkslategrey;
+    top: 0;
+    left: 0;
+  }*/
+@media (min-width: 1024px) {
+  .burger-icon {
+    display: none;
+  }
+  .navbar-menu {
+    display: flex;
+  }
+  nav li:hover {
+    /*border-radius: 20px;*/
+
+    cursor: pointer;
+    border: 2px solid;
+    border-color: #0fa4f9;
+  }
+}
+@media (max-width: 1023px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  nav li:hover {
+    /*border-radius: 20px;*/
+    cursor: pointer;
+    background-color: #0fa4f9;
+    color: white;
+  }
+  .navbar-menu.is-active {
+    display: flex;
+    width: 100%;
+    background-color: rgba(209, 202, 202, 0.9);
+    left: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-top: 1px solid;
+    z-index: 500;
+  }
+
+  .navbar-right.is-active {
+    display: flex;
+    width: 100%;
+    background-color: rgba(209, 202, 202, 0.9);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 256px;
+    border-top: none;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul li {
+    text-align: center;
+    border: thin;
+  }
+  nav ul li {
+    position: relative;
+  }
+  nav ul:last-child {
+    border-bottom: 3px solid;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-nav {
+    height: 45px;
+  }
+  .navbar-right.is-active {
+    display: flex;
+    width: 100%;
+    background-color: rgba(209, 202, 202, 0.9);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 236px;
+    border-top: none;
+  }
+}
